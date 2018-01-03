@@ -6,6 +6,7 @@ We have built a program that will emulate all the docking stations, bikes, and i
 ## Getting started
 
 `git clone https://github.com/AlexandraGF/boris_bikes.git`
+
 `command_to_install_dependencies` (e.g. `bundle`)
 
 ## Usage
