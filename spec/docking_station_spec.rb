@@ -13,7 +13,13 @@ describe DockingStation do
     expect(DockingStation.new).to respond_to(:dock_bike).with(1).argument
   end
 
-  
+  it 'shows a docked bike' do
+    bike = Bike.new
+    station = DockingStation.new
+    station.dock_bike(bike)
+    expect(station.bike).to eq(bike) 
+  end
+
 =begin
   it 'dock_bike responds to 1 arg' do
     expect(DockingStation.new).to receive(:dock_bike).with(Bike.new)
