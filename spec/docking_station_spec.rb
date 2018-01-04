@@ -9,6 +9,17 @@ describe DockingStation do
     expect(Bike.new).to be_working
   end
 
+  it 'responds to dock a bike' do
+    expect(DockingStation.new).to respond_to(:dock_bike).with(1).argument
+  end
+
+  
+=begin
+  it 'dock_bike responds to 1 arg' do
+    expect(DockingStation.new).to receive(:dock_bike).with(Bike.new)
+  end
+=end
+
 #expect(subject.release_bike).to be_a Bike
 #bike = Bike.new
 #expect(bike).to be_working
