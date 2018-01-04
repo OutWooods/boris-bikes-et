@@ -6,11 +6,13 @@ describe DockingStation do
   end
 
   it 'releases working bikes' do
-    expect(Bike.new).to be_working
+    station = DockingStation.new
+    station.dock_bike(Bike.new)
+    expect(station.release_bike).to be_working
   end
 
   it 'raise error if no bikes' do
-    expect {DockingStation.new.release_bike }.to raise_error("No bikes available") 
+    expect {DockingStation.new.release_bike }.to raise_error("No bikes available")
   end
 
   it 'responds to dock a bike' do
