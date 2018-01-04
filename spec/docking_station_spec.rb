@@ -9,6 +9,10 @@ describe DockingStation do
     expect(Bike.new).to be_working
   end
 
+  it 'raise error if no bikes' do
+    expect {DockingStation.new.release_bike }.to raise_error("No bikes available") 
+  end
+
   it 'responds to dock a bike' do
     expect(DockingStation.new).to respond_to(:dock_bike).with(1).argument
   end
@@ -17,8 +21,10 @@ describe DockingStation do
     bike = Bike.new
     station = DockingStation.new
     station.dock_bike(bike)
-    expect(station.bike).to eq(bike) 
+    expect(station.bike).to eq(bike)
   end
+
+
 
 =begin
   it 'dock_bike responds to 1 arg' do
