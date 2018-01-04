@@ -23,14 +23,16 @@ describe DockingStation do
     bike = Bike.new
     station = DockingStation.new
     station.dock_bike(bike)
-    expect(station.bike).to eq(bike)
+    expect(station.bike_collection.include?(bike)).to be true
   end
 
-  it 'raise error if dock is full' do 
+  it 'raise error if dock is full' do
     station = DockingStation.new
     station.dock_bike(Bike.new)
     expect {station.dock_bike(Bike.new) }.to raise_error("Dock is full")
   end
+
+end
 
 
 
@@ -43,6 +45,3 @@ describe DockingStation do
 #expect(subject.release_bike).to be_a Bike
 #bike = Bike.new
 #expect(bike).to be_working
-
-
-end
