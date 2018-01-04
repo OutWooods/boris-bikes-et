@@ -1,8 +1,6 @@
 require_relative 'bike'
 
 
-
-
 class DockingStation
   attr_reader :bike_collection
 
@@ -16,7 +14,12 @@ class DockingStation
   end
 
   def dock_bike(bike)
-    return raise("Dock is full") if @bike_collection.length >= 20
+    return raise("Dock is full") if full?
     @bike_collection << bike
   end
+
+  private
+    def full?
+      @bike_collection.length >= 20  ? true : false
+    end
 end
