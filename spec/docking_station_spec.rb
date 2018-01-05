@@ -1,13 +1,16 @@
 require './lib/docking_station.rb'
 
 describe DockingStation do
+
+  let (:bike) {double("bike")}
   it 'docking station responds' do
     expect(DockingStation.new).to respond_to :release_bike
   end
 
   it 'releases working bikes' do
+    allow(bike).to receive(:working).and_return(true)
     station = DockingStation.new
-    station.dock_bike(double(:bike))
+    station.dock_bike(bike)
     expect(station.release_bike.working).to eq true
   end
 
@@ -16,12 +19,13 @@ describe DockingStation do
   end
 
   it 'it doesn\'t release a broken bike' do
-    subject.dock_bike(double(:bike(false)))
+    allow(bike).to receive(:working).and_return(false)
+    subject.dock_bike(bike)
     expect {subject.release_bike }.to raise_error("Bike Broken")
   end
 
   it "accepts broken bikes" do
-    broken_bike = (double(:bike(false)))
+    broken_bike = (bike)
     subject.dock_bike(broken_bike)
     expect(subject.bike_collection.include?(broken_bike)).to be true
   end
@@ -31,7 +35,6 @@ describe DockingStation do
   end
 
   it 'shows a docked bike' do
-    bike = double(:bike)
     station = DockingStation.new
     station.dock_bike(bike)
     expect(station.bike_collection.include?(bike)).to be true
@@ -39,8 +42,8 @@ describe DockingStation do
 
   it 'raise error if dock is full' do
     station = DockingStation.new
-    DockingStation::DEFAULT_CAPACITY.times { station.dock_bike(double(:bike)) }
-    expect {station.dock_bike(double(:bike)) }.to raise_error("Dock is full")
+    DockingStation::DEFAULT_CAPACITY.times { station.dock_bike(bike) }
+    expect {station.dock_bike(bike) }.to raise_error("Dock is full")
   end
 
   it 'expects default capacity to equal 20' do
