@@ -13,7 +13,7 @@ class DockingStation
 
   def release_bike
    return raise("No bikes available") if @bike_collection.empty?
-    @bike_collection.pop
+    @bike_collection[-1].working ? @bike_collection.pop : raise("Bike Broken")
   end
 
   def dock_bike(bike, working=true)

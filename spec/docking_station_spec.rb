@@ -15,9 +15,10 @@ describe DockingStation do
     expect {DockingStation.new.release_bike }.to raise_error("No bikes available")
   end
 
-  # it 'it doesn\'t release a broken bike' do
-  #   expect(subject.)
-  # end
+  it 'it doesn\'t release a broken bike' do
+    subject.dock_bike(Bike.new(false))
+    expect {subject.release_bike }.to raise_error("Bike Broken")
+  end
 
   it 'responds to dock a bike' do
     expect(DockingStation.new).to respond_to(:dock_bike).with(1).argument
