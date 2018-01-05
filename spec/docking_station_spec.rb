@@ -20,6 +20,12 @@ describe DockingStation do
     expect {subject.release_bike }.to raise_error("Bike Broken")
   end
 
+  it "accepts broken bikes" do
+    broken_bike = Bike.new(false)
+    subject.dock_bike(broken_bike)
+    expect(subject.bike_collection.include?(broken_bike)).to be true 
+  end
+
   it 'responds to dock a bike' do
     expect(DockingStation.new).to respond_to(:dock_bike).with(1).argument
   end
