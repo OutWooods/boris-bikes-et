@@ -8,12 +8,16 @@ describe DockingStation do
   it 'releases working bikes' do
     station = DockingStation.new
     station.dock_bike(Bike.new)
-    expect(station.release_bike).to be_working
+    expect(station.release_bike.working).to eq true
   end
 
   it 'raise error if no bikes' do
     expect {DockingStation.new.release_bike }.to raise_error("No bikes available")
   end
+
+  # it 'it doesn\'t release a broken bike' do
+  #   expect(subject.)
+  # end
 
   it 'responds to dock a bike' do
     expect(DockingStation.new).to respond_to(:dock_bike).with(1).argument
@@ -30,6 +34,14 @@ describe DockingStation do
     station = DockingStation.new
     DockingStation::DEFAULT_CAPACITY.times { station.dock_bike(Bike.new) }
     expect {station.dock_bike(Bike.new) }.to raise_error("Dock is full")
+  end
+
+  it 'expects default capacity to equal 20' do
+    expect(subject.capacity).to eq 20
+  end
+
+  it 'responds to working argument when docking' do
+    expect(subject).to respond_to(:dock_bike).with(2).argument
   end
 
 end
