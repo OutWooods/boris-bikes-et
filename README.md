@@ -1,7 +1,7 @@
 <h2 align="center"> Boris Bikes </h2>
 <h3 align="center"> The Best way to get about London</h3>
 
- <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#extentions'>Extention</a> |
+ <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |
  <a href='#user_story'> User Stories</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
 
 ## Scenario  <a name= "scenario"></a>
@@ -15,34 +15,35 @@ This was our first time with a whole range of approaches: interpretating user st
 
 ## Approach <a name= "approach"> </a>
 
-**All taken from my daily reflections from the week**
+*All taken from my daily reflections from the week*
 
 Throughout the week we paired with different people. Building on the product we built the day before, and sharing ideas. 
-Over 3 days, I paired with @Edpe @Elliewem and @AlexandraGF. But the code we have also comes from other members of the cohort, @JenniferSheperd. It was a really great way to spread learning and ideas, and different approaches to the problem. 
+Over 3 days, I paired with @Edpe, @Elliewem and @AlexandraGF but also shared code with @Jenniferemshepperd. It was a really great way to spread learning and ideas, and different approaches to the problem. 
 
 My main overall target after this week was to write ideas down more. As I found I could overload my head with thoughts and also pairs sometimes struggled to follow my thought process. After this week I brought in a pad of paper and dumped all my ideas on it. And this significantly raised my productivity and my ability to communicate ideas. 
 
-#### Targets (From the start of the week) - no more than 3 points
-1) To learn how to use Rspec
-2) To learn how to use classes in Ruby (something we only touched on in the pre-course)
-3) To learn about pairing, and see how I can improve
+#### Targets
+*Written at the start of the week in my journal*
+- Learn how to use Rspec
+- Investigate classes in Ruby (something we only touched on in the pre-course)
+- Practise pairing and see how I can improve
 
-#### What went well - no more than 3
-1) Pairing was really using, and I learn alot comparing approaches with other people 
-2) Lots of refactoring time to tidy up code
-3) Kept it slow and made sure we understood everything, rather than rushing to finish
+## Reflections  <a name= "reflections"> </a>
+*Written during and after the week, in my journal*
 
-#### Development points - no more than 3
-1) Need to write ideas down, and break ideas down into steps so you can measure your progess and understanding.
-2) Designing and planning out code, to make sure that classes are not overly dependent. 
-3) Understanding stubbing and mocking Rspec
+#### What Went well
+- Pairing taught me alot, enabling me to compare approaches with other people 
+- I made sure we had Lots of refactoring time to tidy up code, kept it clean
+- Kept it slow and made sure we understood everything, rather than rushing to finish
 
-## Extentions <a name= "extentions"> </a>
-*With more time we would have:*
+#### Targets for next time
+- Need to write ideas down, and break ideas down into steps so you can measure your progess and understanding.
+- Designing and planning out code, to make sure that classes are not overly dependent. 
+- Understanding stubbing and mocking Rspec
+
+#### With more time I would have:
 - Added Feature tests
-
 - Read alot more about rspec in its docs and nd taken more time to experiment and play with it. 
-
 - Added a van functionality that moves bikes about, and takes them to be repaired (this would be nice for users). 
 
 ## User stories <a name= "user_story"></a>
