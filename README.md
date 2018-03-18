@@ -6,21 +6,23 @@
 
 ## Scenario  <a name= "scenario"></a>
 
-This was a project we did over 3 days (normally its 4 but Christmas happened so the course started a day late...) in our first week at Makers.  
+This was a project we did over 3 days in our first week at Makers.  
 
 We have been asked to build a network of docking stations and bikes that anyone can use (see user stories below). We have built a program that will emulate all the docking stations, bikes, and infrastructure (repair staff, and so on). There's no interface, you can build the objects and simulate the setup on the command line. For further info see <a href='#user_story'> user stories</a>  (I've put them at the bottom since this being a learning project, what matters most is approach.)
 
-This was our first time with a whole range of approaches: Interpretating User stories, Pairing, TDD, Object Oriented Programmng.
+This was our first time with a whole range of approaches: interpretating user stories, pairing, TDD, object oriented programmng.
 
 
-## Approach (All taken from my daily reflections from the week) <a name= "approach"> </a>
+## Approach <a name= "approach"> </a>
+
+**All taken from my daily reflections from the week**
 
 Throughout the week we paired with different people. Building on the product we built the day before, and sharing ideas. 
 Over 3 days, I paired with @Edpe @Elliewem and @AlexandraGF. But the code we have also comes from other members of the cohort, @JenniferSheperd. It was a really great way to spread learning and ideas, and different approaches to the problem. 
 
 My main overall target after this week was to write ideas down more. As I found I could overload my head with thoughts and also pairs sometimes struggled to follow my thought process. After this week I brought in a pad of paper and dumped all my ideas on it. And this significantly raised my productivity and my ability to communicate ideas. 
 
-#### Targets (At the start of the week)- no more than 3 points
+#### Targets (From the start of the week) - no more than 3 points
 1) To learn how to use Rspec
 2) To learn how to use classes in Ruby (something we only touched on in the pre-course)
 3) To learn about pairing, and see how I can improve
@@ -36,12 +38,12 @@ My main overall target after this week was to write ideas down more. As I found 
 3) Understanding stubbing and mocking Rspec
 
 ## Extentions <a name= "extentions"> </a>
+*With more time we would have:*
+- Added Feature tests
 
-Added Feature tests
+- Read alot more about rspec in its docs and nd taken more time to experiment and play with it. 
 
-If we had had more time, we would have read alot more about rspec in its docs. And taken more time to experiment and play with it. 
-
-Also added a van functionality that moves bikes about, and takes them to be repaired (this would be nice for users). 
+- Added a van functionality that moves bikes about, and takes them to be repaired (this would be nice for users). 
 
 ## User stories <a name= "user_story"></a>
 
