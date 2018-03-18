@@ -22,7 +22,7 @@ Over 3 days, I paired with @Edpe, @Elliewem and @AlexandraGF but also shared cod
 
 My main overall target after this week was to write ideas down more. As I found I could overload my head with thoughts and also pairs sometimes struggled to follow my thought process. After this week I brought in a pad of paper and dumped all my ideas on it. And this significantly raised my productivity and my ability to communicate ideas. 
 
-#### Targets
+#### Targets:
 *Written at the start of the week in my journal*
 - Learn how to use Rspec
 - Investigate classes in Ruby (something we only touched on in the pre-course)
